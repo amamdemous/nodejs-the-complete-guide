@@ -8,7 +8,8 @@
     "start:3": "nodemon section-3/app.js",
     "start:4": "nodemon section-4/app.js",
     "start:5": "nodemon section-5/app.js",
-    "start:6": "nodemon section-6/app.js"
+    "start:6": "nodemon section-6/app.js",
+    "start:7": "nodemon section-7/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +22,10 @@
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "pug": "^3.0.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/products.json"
+    ]
   }
 }
