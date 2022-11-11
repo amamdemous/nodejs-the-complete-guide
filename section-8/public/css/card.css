@@ -30,6 +30,7 @@ img {
   flex-wrap: wrap;
   gap: 1em;
   padding: 1em;
+  margin-top: 64px;
 }
 
 .card-controls {

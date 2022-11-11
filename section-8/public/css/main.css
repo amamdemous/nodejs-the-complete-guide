@@ -16,6 +16,21 @@ header {
   align-items: center;
   font-size: 1.2rem;
   padding: 1em 1.5em;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-toggle {
+  margin-left: auto;
+  display: none;
 }
 
 nav > ul {
@@ -79,6 +94,7 @@ input {
 }
 
 .form {
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -100,11 +116,33 @@ textarea {
     font-size: 1rem;
   }
 
-  header ul {
-    display: none;
-  }
-
   .container {
     justify-content: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+  .nav-expanded {
+    border-top: 2px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    padding: 16px 1.5em;
+  }
+
+  .nav-expanded > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
   }
 }
