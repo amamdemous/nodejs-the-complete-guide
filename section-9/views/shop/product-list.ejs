@@ -1,0 +1,40 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/card.css">
+</head>
+
+</head>
+
+<body>
+  <%- include('../includes/header.ejs') %>
+
+  <main>
+    <% if (prods.length > 0) { %>
+    <div class="container">
+      <% for (let product of prods) { %>
+      <div class="card">
+        <div class="card-img">
+          <img src="<%= product.imageURL %>" alt="<%= product.title %>" />
+        </div>
+        <hr />
+        <div class="card-title">
+          <h4><%= product.title %></h4>
+        </div>
+        <div class="card-price">
+          <p><%= product.price %> $</p>
+        </div>
+        <div class="card-content">
+          <p><%= product.description %></p>
+        </div>
+        <div class="card-controls">
+          <form action="/cart" method="POST">
+            <button type="submit" class="btn btn-primary"> Add to cart</button>
+            <input type="hidden" name="productId" value="<%= product.id %>">
+          </form>
+          <a class="btn" href="/products/<%= product.id %>"> Details </a>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <% } %>
+  </main>
+  <%- include('../includes/end.ejs') %>

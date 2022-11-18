@@ -10,7 +10,8 @@
     "start:5": "nodemon section-5/app.js",
     "start:6": "nodemon section-6/app.js",
     "start:7": "nodemon section-7/app.js",
-    "start:8": "nodemon section-8/app.js"
+    "start:8": "nodemon section-8/app.js",
+    "start:9": "nodemon section-9/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -26,7 +27,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "data/products.json"
+      "data/  "
     ]
   }
 }
