@@ -1,0 +1,20 @@
+.product-details {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-details > * {
+  padding: 0.7em 0.5em;
+}
+
+.product-details-title {
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.product-details-img {
+  width: 100%;
+  height: auto;
+}
